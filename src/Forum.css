@@ -1,0 +1,25 @@
+.forum {
+    padding: 2rem;
+    margin-bottom: 125px;
+    text-align: left;
+    z-index: 1;
+}
+
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.posts-header {
+    display: flex;
+    align-items: center;
+    gap: 67.5rem;
+    font-size: 1.2rem;
+}
+
+.search-icon {
+    color: #f2efef;
+    cursor: pointer;
+}

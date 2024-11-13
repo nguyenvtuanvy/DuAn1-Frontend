@@ -1,0 +1,177 @@
+/* Footer container */
+.footer {
+    background-color: #2a4f39;
+    color: #ffffff;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    /* Đảm bảo các thẻ div con có cùng chiều cao */
+    background-color: #D9CFC3;
+    color: #000000;
+    padding: 1.5rem;
+    position: relative;
+    top: -9rem;
+    margin: 0 auto 1rem;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-contact p,
+.footer-hours p,
+.footer-delivery p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.footer-contact {
+    border-right: 1px solid #0c0c0c;
+}
+
+.footer-hours {
+    border-right: 1px solid #080808;
+    padding-left: 1rem;
+}
+
+.footer-top h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #000000;
+}
+
+/* Footer bottom section */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 1rem;
+    width: 80%;
+    /* Đặt chiều rộng bằng với footer-top */
+    margin: 0 auto;
+    /* Căn giữa */
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    flex: 1;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0.3rem 0;
+}
+
+.footer-links a:hover {
+    color: #f8a663;
+}
+
+/* Newsletter form */
+.footer-newsletter {
+    flex: 2;
+}
+
+.footer-newsletter h3 {
+    margin-bottom: 0.5rem;
+}
+
+.footer-newsletter label {
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+.footer-newsletter input[type="email"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ffffff;
+    /* Đặt border màu trắng */
+    background-color: transparent;
+    /* Đặt nền trong suốt */
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.newsletter-subscribe {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    gap: 15rem;
+}
+
+.newsletter-subscribe input {
+    margin-right: 0.5rem;
+}
+
+.footer-newsletter button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #f5f3f2;
+    color: #2a4f39;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer-newsletter button:hover {
+    background-color: #d67b41;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+
+    .footer-top,
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        margin-bottom: 1rem;
+    }
+
+    .footer-section {
+        border-right: none;
+        padding: 1rem 0;
+    }
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.footer-social span {
+    margin: 0 10px;
+    font-size: 2.2rem;
+    color: #DA6628;
+}
+
+.footer-social .separator {
+    margin: 0 90px;
+    color: #DA6628;
+}
+
+.footer-copyright p {
+    color: #DA6628;
+}
