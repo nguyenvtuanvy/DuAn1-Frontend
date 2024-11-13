@@ -5,7 +5,10 @@
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
+    background-image: url('https://s3-alpha-sig.figma.com/img/c9bc/49dd/a22f250bf8b1f7078dd7bebe1e963379?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Xf-am5SG5i2QPpjKqEKT6f6HqVMEzgaOwKAFvnVPFWffNtpMjA6T9PfRC3iHuwXVEwQsz-nvi-7P1W7JjSLcytk7HE7W-Z8p84hIQKGEl~IadT0n6z3Jxk8DL2JkPSy7vUEXnS3A07ZgwWrbD2SBgWdvQTUabIpsD-t1LAETu3mSnzNZV6uPp4AQFP-XUNfyOAPyOqtKDwlXSqf76m7RNz2Eu0xE6HBVcFGwJ-FYnyMiuaO1WdKnbssNDDJ844JEeD1otP2sjWU65VZ0g2QZy2XBYwiXTiDRmpH7ucqAnQUHhBy-UGmyeMNgL~zPpxSTwtvdHeB4byb5gbngYWaC5g__');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
     z-index: 1;
 }

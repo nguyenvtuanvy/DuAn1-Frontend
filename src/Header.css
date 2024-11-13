@@ -16,11 +16,11 @@
 .header::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: 98px;
     left: 0;
     right: 0;
-    height: 412.5px;
-    background-color: #2a4f39;
+    height: 315.5px;
+    background-image: url('https://s3-alpha-sig.figma.com/img/4995/18b4/5e88571d1e786b684059d0f2744cc6fb?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EfoHeQN7DYSqWQzkXm2w9bz3cuVol5Ynrpxfxs7jw6PrMYraifhCH7mu~QLrgw30uma2KTlzw-fT8jLd9-JmzIzCgftDPLQR5B-dEqFqxn2zILXu0E-X3hz2ibLEaVIQpdszMqRRtEvMkDPxU0dIeGrRKhouBXKYhm~JE-PDzBEGOKpoR6agC6Pe4rqynyFxq2IdiPk1iuCh38rtsf8kK625TYuZiqqBCBUKJVckFhY~Xdf5dwa9JamEYoRMCUvZG9lQj7FnILl2Thq8h6m6usiOFnbnWZmUIWpKb~n0AKJIQm~Kkw6jv74D0ObGEGnGUKqN8EuBvLs3vGd-d3kFxQ__');
     z-index: -1;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }

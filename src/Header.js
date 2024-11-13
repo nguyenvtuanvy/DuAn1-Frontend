@@ -32,7 +32,7 @@ const Header = () => {
             <nav className="nav">
                 <Link to="/">Home</Link>
                 <a href="#about">About</a>
-                <a href="#forum">Forum</a>
+                <Link to="/forum">Forum</Link>
                 <a href="#contact">Contact Us</a>
             </nav>
             {username ? (

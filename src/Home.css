@@ -1,0 +1,96 @@
+.home {
+    font-family: Arial, sans-serif;
+    color: #333;
+    z-index: 1;
+    margin-top: 120px;
+    margin-bottom: 130px;
+}
+
+.header-home {
+    text-align: center;
+    background-color: transparent;
+    padding: 20px;
+    color: #fff;
+    margin-bottom: 70px;
+}
+
+.grow-with-us {
+    text-align: center;
+    padding: 45px;
+    background-color: #e6e6e6;
+    border-bottom: 1.3px solid black;
+}
+
+.grow-with-us h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.grow-with-us p {
+    font-size: 16px;
+    color: #555;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1090px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.feature.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.image {
+    width: 331px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    /* clip-path: polygon(20% 0%, 80% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); */
+    /* border-radius: 70% 30% 30% 70% / 70% 30% 70% 30%; */
+    margin: 0 20px;
+}
+
+.image1 {
+    background-image: url('./Vector.svg');
+}
+
+.image2 {
+    background-image: url('./Vector-2.svg');
+}
+
+.image3 {
+    background-image: url('./Vector-3.svg');
+    border-radius: 15px;
+}
+
+.content {
+    max-width: 630px;
+    text-align: left;
+}
+
+.feature h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 14px;
+    color: #666;
+}
