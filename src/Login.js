@@ -9,6 +9,7 @@ const Login = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [errors, setErrors] = useState({ username: '', password: '' });
+    const [showPassword, setShowPassword] = useState(false);
 
     const validateForm = () => {
         let valid = true;
@@ -34,6 +35,10 @@ const Login = () => {
         return valid;
     };
 
+    const togglePasswordVisibility = () => {
+        setShowPassword(!showPassword);
+    };
+
     const handleLogin = async (event) => {
         event.preventDefault();
         if (validateForm()) {
@@ -56,40 +61,52 @@ const Login = () => {
     };
 
     return (
-        <div className="login-container">
-            <h2>Login</h2>
-            <form onSubmit={handleLogin} className="login-form">
-                <div className="form-group">
-                    <label htmlFor="username">Username:</label>
-                    <input
-                        type="text"
-                        id="username"
-                        name="username"
-                        value={username}
-                        onChange={(e) => setUsername(e.target.value)}
-                        required
-                    />
-                    {errors.username && <p className="error-text">{errors.username}</p>}
-                </div>
-                <div className="form-group">
-                    <label htmlFor="password">Password:</label>
-                    <input
-                        type="password"
-                        id="password"
-                        name="password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        required
-                    />
-                    {errors.password && <p className="error-text">{errors.password}</p>}
-                </div>
-                <div className="form-buttons">
-                    <button type="submit" className="login-btn" onClick={handleLogin}>Login</button>
-                    <button type="button" onClick={handleBack} className="back-btn">Back</button>
-                </div>
-            </form>
-            <div className="register-link">
-                <p>Don't have an account? <Link to="/register">Register here</Link></p>
+        <div className="login-page">
+            <div className="login-container">
+                <h2>Login</h2>
+                <form onSubmit={handleLogin} className="login-form">
+                    <div className="form-group">
+                        <div className="input-group">
+                            <input
+                                type="text"
+                                id="username"
+                                name="username"
+                                placeholder='Enter your username'
+                                value={username}
+                                onChange={(e) => setUsername(e.target.value)}
+                                required
+                            />
+                            <i className="fa fa-user input-icon"></i>
+                        </div>
+                        {errors.username && <p className="error-text">{errors.username}</p>}
+                    </div>
+                    <div className="form-group">
+                        <div className="input-group">
+                            <input
+                                type={showPassword ? 'text' : 'password'}
+                                id="password"
+                                name="password"
+                                placeholder='Enter your password'
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                                required
+                            />
+                            <i
+                                className={`fa ${showPassword ? 'fa-eye-slash' : 'fa-eye'} input-icon`}
+                                aria-hidden="true"
+                                onClick={togglePasswordVisibility} // Thêm sự kiện onClick để chuyển đổi
+                            ></i>
+                        </div>
+                        {errors.password && <p className="error-text">{errors.password}</p>}
+                    </div>
+                    <div className="form-buttons">
+                        <button type="submit" className="login-button" onClick={handleLogin}>Login</button>
+                        {/* <button type="button" onClick={handleBack} className="back-btn">Back</button> */}
+                    </div>
+                </form>
+                {/* <div className="register-link">
+                    <p>Don't have an account? <Link to="/register">Register here</Link></p>
+                </div> */}
             </div>
         </div>
     );

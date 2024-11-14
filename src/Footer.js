@@ -30,7 +30,7 @@ const Footer = () => {
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
                     <a href="#forum">Forum</a>
-                    <a href="#contact">Contact Us</a>
+                    <a href="#contact" style={{ marginTop: "25px" }}>Contact Us</a>
                 </div>
                 <div className="footer-newsletter">
                     <h3>Get the Latest News & Updates from Our Farm</h3>

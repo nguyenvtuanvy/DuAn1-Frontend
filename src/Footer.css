@@ -12,7 +12,6 @@
     display: flex;
     justify-content: space-around;
     align-items: stretch;
-    /* Đảm bảo các thẻ div con có cùng chiều cao */
     background-color: #D9CFC3;
     color: #000000;
     padding: 1.5rem;
